@@ -2,10 +2,10 @@ package com.paveldejimas.bazine;
 // Klase ZmogusImpl realizuoja interfeisa Zmogus (Igyvendina visus metodus) suteikia kamienus
 public class ZmogusImpl implements Zmogus {
     private String lytis;
-    private long asmensKodas;
+    private long   asmensKodas;
     private String vardas;
     private String pavarde;
-    private int amzius;
+    private int    amzius;
     private double svoris;
     private double ugis;
     private String plaukuSpalva;
@@ -23,18 +23,16 @@ public class ZmogusImpl implements Zmogus {
         this.plaukuSpalva = plaukuSpalva;
     }
 
-    @Override
     public String toString() {
-        return "Zmogus{" +
-                "lytis='" + lytis + '\'' +
-                ", asmensKodas=" + asmensKodas +
-                ", vardas='" + vardas + '\'' +
-                ", pavarde='" + pavarde + '\'' +
-                ", amzius=" + amzius +
-                ", svoris=" + svoris +
-                ", ugis=" + ugis +
-                ", plaukuSpalva='" + plaukuSpalva + '\'' +
-                '}';
+        return "Informacija apie zmogu:\n" +
+                "Lytis: " + lytis  + "\n" +
+                "Asmens Kodas: "   + asmensKodas   +"\n"+
+                "Vardas: "       + vardas          +"\n"+
+                "Pavarde: "      + pavarde         +"\n"+
+                "Amzius: "        + amzius         +"\n"+
+                "Svoris: "        + svoris         +"\n"+
+                "Ugis: "          + ugis           +"\n"+
+                "Plauku Spalva: " + plaukuSpalva ;
     }
 
     public void setLytis (String lytis){
